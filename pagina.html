@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Sueños</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobremi.html">Sobre mí</a></li>
+            <li><a href="hobbies.html">Qué me gusta hacer</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="pagina.html" class="active">formulario</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="pagina-section">
+            <form action="index.php" method="POST">
+                <fieldset>
+                    <legend>Contáctanos llenando el formulario</legend>
+                    
+                    <label>Nombre</label>
+                    <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                    
+                    <label>Teléfono</label>
+                    <input type="text" name="telefono" placeholder="Tu Teléfono" required>
+                    
+                    <label>Email</label>
+                    <input type="email" name="Email" placeholder="Tu Email" required>
+                    
+                    <label>Mensaje</label>
+                    <textarea name="Mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    
+                    <div class="form-buttons">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpiar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
